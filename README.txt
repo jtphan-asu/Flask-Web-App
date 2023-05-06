@@ -27,7 +27,15 @@ set up form with POST request for sign_up.html and login.html
 
 put .js file in static if wanting to add own .js
 
+//add to github
+git remote add Flask-Web-App https://github.com/jtphan-asu/Flask-Web-App
 
+<script
+        type="text/javascript"
+        src="{{ url_for('static', filename='index.js') }}"
+    ></script>
+    
+Set up POST, GET requests on auth.py.  Request variable.
 
-
+Set up flash messages on base.html
 
