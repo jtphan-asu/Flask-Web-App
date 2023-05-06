@@ -1,3 +1,5 @@
+
+*****PROJECT CREATION*****
 Create Project Folder
 
 Create website folder that contains static, templates and __init__.py to make a python package.
@@ -36,6 +38,7 @@ git remote add Flask-Web-App https://github.com/jtphan-asu/Flask-Web-App
     ></script>
     
 Set up POST, GET requests on auth.py.  Request variable.
-
+    Create input rescritions ( too short password, etc.)
 Set up flash messages on base.html
 
+*****SET UP DATABASE*****
