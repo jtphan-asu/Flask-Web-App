@@ -65,3 +65,5 @@ db.session.commit()
 Add login() function for flask in auth.py
 Add @login_required for few pages
 Add LoginManager() for create_app()
+
+Add changes to view.py and base.html to only show navbar if current_user is logged in
