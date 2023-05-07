@@ -1,4 +1,6 @@
 
+![Alt text](./Flask Web App/Flask Web App Demo)
+
 *****PROJECT CREATION*****
 Create Project Folder
 
