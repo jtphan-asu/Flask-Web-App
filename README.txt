@@ -42,3 +42,21 @@ Set up POST, GET requests on auth.py.  Request variable.
 Set up flash messages on base.html
 
 *****SET UP DATABASE*****
+Set up sqlite with sqlalchemy
+
+Set up database tables schema under models.py
+    User
+    Note
+Database model is blueprint for how data is stored in database
+Utilize sqlalchemy.sql func() to manage date time
+
+Set up foreign key relationships for Note and User
+    One User to Many Notes ( One-to-many relationship)
+
+
+*****CREATE DATABASE*****
+add create_database method to __init.py__
+
+//These lines add the user to database session and commit
+db.session.add(new_user)
+db.session.commit()
