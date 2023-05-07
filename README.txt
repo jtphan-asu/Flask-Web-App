@@ -62,3 +62,6 @@ db.session.add(new_user)
 db.session.commit()
 
 *****LOGIN USER*****
+Add login() function for flask in auth.py
+Add @login_required for few pages
+Add LoginManager() for create_app()
