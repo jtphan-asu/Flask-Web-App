@@ -67,3 +67,22 @@ Add @login_required for few pages
 Add LoginManager() for create_app()
 
 Add changes to view.py and base.html to only show navbar if current_user is logged in
+
+****NOTE FUNCTIONALITY****
+Change home.html to show list of notes 
+Add textarea to add a notes 
+Add Button to Add Note
+
+#Add Notes
+Add note to views.py then commit to db
+    #Add note then add to db
+            new_note = Note(data=note, user_id=current_user.id)
+            db.session.add(new_note)
+            db.session.commit()
+
+#Delete Notes
+Add function in index.js to delete note by sending POST request to backend with noteId
+
+Add Note Data to home.html
+
+Add delete_note to views.py
