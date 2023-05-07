@@ -67,3 +67,8 @@ Add @login_required for few pages
 Add LoginManager() for create_app()
 
 Add changes to view.py and base.html to only show navbar if current_user is logged in
+
+****NOTE FUNCTIONALITY****
+Change home.html to show list of notes 
+Add textarea to add a notes 
+Add Button to Add Note
