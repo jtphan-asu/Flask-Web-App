@@ -60,3 +60,5 @@ add create_database method to __init.py__
 //These lines add the user to database session and commit
 db.session.add(new_user)
 db.session.commit()
+
+*****LOGIN USER*****
