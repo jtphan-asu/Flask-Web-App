@@ -60,3 +60,10 @@ add create_database method to __init.py__
 //These lines add the user to database session and commit
 db.session.add(new_user)
 db.session.commit()
+
+*****LOGIN USER*****
+Add login() function for flask in auth.py
+Add @login_required for few pages
+Add LoginManager() for create_app()
+
+Add changes to view.py and base.html to only show navbar if current_user is logged in
