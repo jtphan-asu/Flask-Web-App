@@ -1,9 +1,11 @@
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, request, flash, jsonify
 #current_user object can access login information from user
 from flask_login import login_required, current_user
 
 from .models import Note
 from . import db
+import json
+
 views = Blueprint('views', __name__)
 
 @views.route('/', methods=['GET', 'POST'])
@@ -29,3 +31,15 @@ def login():
 
 def sign_up():
     return render_template("sign_up.html")
+
+@views.route('/delete-note', methods=['POST'])
+def delete_note():  
+    note = json.loads(request.data) 
+    noteId = note['noteId']
+    note = Note.query.get(noteId)
+    if note:
+        if note.user_id == current_user.id:
+            db.session.delete(note)
+            db.session.commit()
+
+    return jsonify({})
